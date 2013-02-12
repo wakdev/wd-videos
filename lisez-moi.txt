@@ -1,0 +1,84 @@
+###################################################################
+## >> WD VIDEO <<                                                ##
+## Julien Veuillet - © wakdev Prod. [http://www.wakdev.com]      ##
+## Copyright(C) 2009 - Today. All rights reserved.               ##
+## license GNU/GPL                                               ##
+###################################################################
+
+
+Configuration :
+
+	mode : 	xml	[charge la playlist xml] , url [url du fichier playlist xml]
+			database [charge la playlist à partir d'une base de donnée] , id [identifiant de la playlist]
+			file [charle le fichier vidéo] , url [url du fichier vidéo] , title [titre du fichier]
+			
+	Intégration HTML:
+
+	<param name="FlashVars" value="mode=database&id=1" />  CHARGEMENT DEPUIS LA BASE DE DONNEE DE LA PLAYLIST 1
+	<param name="FlashVars" value="mode=xml&url=xml/playlist.xml" />  CHARGEMENT PLAYLIST DEPUIS UN FICHIER XML
+	<param name="FlashVars" value="mode=file&url=video/1.flv&title=mavideo" />  CHARGEMENT DEPUIS UN FICHIER
+
+	Fichier XML :
+	
+	
+	<?xml version="1.0" encoding="UTF-8"?>
+	<movies>
+		<movie>
+			<id><![CDATA[01]]></id>
+			<title><![CDATA[Titre]]></title>
+			<date><![CDATA[xx xx 20xx]]></date>
+			<duration><![CDATA[xx:xx]]></duration>
+			<detail><![CDATA[Description]]></detail>
+			<thumbnail><![CDATA[thumbs/xx.jpg]]></thumbnail>
+			<url><![CDATA[videos/xx.flv]]></url>
+		</movie>
+                <movie>
+			<id><![CDATA[02]]></id>
+			<title><![CDATA[Titre]]></title>
+			<date><![CDATA[xx xx 20xx]]></date>
+			<duration><![CDATA[xx:xx]]></duration>
+			<detail><![CDATA[Description]]></detail>
+			<thumbnail><![CDATA[thumbs/xx.jpg]]></thumbnail>
+			<url><![CDATA[videos/xx.flv]]></url>
+		</movie>
+		
+	</movies>
+	
+	
+	
+	Base de donnée :
+
+		--
+		-- Structure de la table `playlists`
+		--
+
+		CREATE TABLE `playlists` (
+					  `id` int(11) NOT NULL auto_increment,
+					  `title` text NOT NULL,
+					  PRIMARY KEY  (`id`)
+		) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+
+		--
+		-- Structure de la table `videos`
+		--
+
+		CREATE TABLE `videos` (
+					  `id` int(11) NOT NULL auto_increment,
+					  `id_playlist` int(11) NOT NULL,
+					  `title` text NOT NULL,
+					  `date` text NOT NULL,
+					  `duration` text NOT NULL,
+					  `detail` text NOT NULL,
+					  `thumbnail` text NOT NULL,
+					  `url` text NOT NULL,
+					  `position` int(11) NOT NULL,
+					  PRIMARY KEY  (`id`)
+		) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+	
+	
+	
+	REMARQUE IMPORTANTE :
+
+	Pour que le fullscreen fonctionne : <param name="allowFullScreen" value="true" />

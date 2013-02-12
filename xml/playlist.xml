@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<movies>
+	<movie>
+		<id><![CDATA[01]]></id>
+		<title><![CDATA[Amon Tobin]]></title>
+		<date><![CDATA[2009]]></date>
+		<duration><![CDATA[01:19]]></duration>
+		<detail><![CDATA[Video 1]]></detail>
+		<thumbnail><![CDATA[thumbs/1.jpg]]></thumbnail>
+		<url><![CDATA[videos/1.flv]]></url>
+	</movie>
+	<movie>
+		<id><![CDATA[02]]></id>
+		<title><![CDATA[Mario GTA]]></title>
+		<date><![CDATA[2009]]></date>
+		<duration><![CDATA[02:56]]></duration>
+		<detail><![CDATA[Video 2]]></detail>
+		<thumbnail><![CDATA[thumbs/1.jpg]]></thumbnail>
+		<url><![CDATA[videos/2.flv]]></url>
+	</movie>
+</movies>

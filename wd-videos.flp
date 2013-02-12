@@ -1,0 +1,30 @@
+﻿<flash_project name="wd-videos" version="1">
+    <project_folder name="Classes" expanded="true">
+        <project_folder name="Object" expanded="false">
+            <project_file path="./classes/Movie.as" filetype="as" />
+        </project_folder>
+        <project_folder name="PlayerVideo" expanded="false">
+            <project_folder name="SeekBar" expanded="false">
+                <project_file path="./classes/SeekBar.as" filetype="as" />
+            </project_folder>
+            <project_folder name="Control" expanded="false">
+                <project_file path="./classes/Control.as" filetype="as" />
+            </project_folder>
+            <project_folder name="VolumeBar" expanded="false">
+                <project_file path="./classes/VolumeBar.as" filetype="as" />
+            </project_folder>
+            <project_folder name="Playlist" expanded="false">
+                <project_folder name="List" expanded="false">
+                    <project_file path="./classes/SelectList.as" filetype="as" />
+                    <project_file path="./classes/ElementButton.as" filetype="as" />
+                    <project_file path="./classes/ListElement.as" filetype="as" />
+                </project_folder>
+                <project_file path="./classes/Playlist.as" filetype="as" />
+            </project_folder>
+            <project_file path="./classes/PlayerVideo.as" filetype="as" />
+        </project_folder>
+        <project_file path="./classes/ModVideo.as" filetype="as" />
+        <project_file path="./classes/FlashSql.as" filetype="as" />
+    </project_folder>
+    <project_file path="./wd-videos.fla" filetype="fla" profile="" def_file="true" />
+</flash_project>
