@@ -1,6 +1,5 @@
-wd-videos
-=========
-
+![WD VIDEOS](http://www.wakdev.com/contents/files/wd-videos/wd-videos.jpg)
+================================================
 WD Videos est un lecteur de vidéo développé en AS2.
 
 
